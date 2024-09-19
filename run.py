@@ -1,14 +1,15 @@
 import sys
 import logging
 
-import jinja2
-environment = jinja2.Environment()
-
+import aiohttp_jinja2
 from aiohttp.web import run_app
-
-from sqli.app import init as init_app
+# from sqli.app import init as init_app
 
 log = logging.getLogger(__name__)
+
+@aiohttp_jinja2.template('tmpl.jinja2')
+def handler(request):
+    return {'name': 'Andrew', 'surname': 'Svetlov'}
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
