@@ -7,6 +7,8 @@ from aiohttp.web import run_app
 
 log = logging.getLogger(__name__)
 
+aiohttp_jinja2.template('tmpl.jinja2')
+
 @aiohttp_jinja2.template('tmpl.jinja2')
 def handler(request):
     return {'name': 'Andrew', 'surname': 'Svetlov'}
