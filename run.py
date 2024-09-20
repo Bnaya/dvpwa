@@ -1,16 +1,16 @@
 import sys
 import logging
 
-import aiohttp_jinja2
+from aiohttp_jinja2 import template 
 # from aiohttp.web import run_app
-import aiohttp
+# import aiohttp
 # from sqli.app import init as init_app
 
 log = logging.getLogger(__name__)
 
-aiohttp_jinja2.template('tmpl.jinja2')
+template('tmpl.jinja2')
 
-@aiohttp_jinja2.template('tmpl.jinja2')
+template('tmpl.jinja2')
 def handler(request):
     return {'name': 'Andrew', 'surname': 'Svetlov'}
 
