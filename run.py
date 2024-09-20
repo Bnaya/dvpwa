@@ -10,7 +10,7 @@ log = logging.getLogger(__name__)
 
 template('tmpl.jinja2')
 
-template('tmpl.jinja2')
+@template('tmpl.jinja2')
 def handler(request):
     return {'name': 'Andrew', 'surname': 'Svetlov'}
 
