@@ -5,6 +5,10 @@ from django.urls import reverse
 
 from .models import Choice, Question
 
+from sqlparse import wat
+
+wat()
+
 
 # ...
 def vote(request, question_id):
