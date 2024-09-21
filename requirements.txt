@@ -1,2 +1,2 @@
 django==4.2.1
-sqlparse==0.4.2
+sqlparse==0.4.1
