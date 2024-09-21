@@ -1,2 +1,2 @@
-django==5.1.1
-sqlparse==0.3.0
+django==4.0
+sqlparse==0.1.15
