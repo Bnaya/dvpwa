@@ -1,0 +1,5 @@
+{
+    "python.languageServer": "Jedi",
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": []
+}
