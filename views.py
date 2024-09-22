@@ -1,14 +1,7 @@
-from django.db.models import F
-from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
-from django.urls import reverse
+from flask.scaffold import Scaffold
 
-from .models import Choice, Question
-
-# from sqlparse import wat
-
-# wat()
-
+Scaffold().jinja_loader()
 
 # ...
 def vote(request, question_id):
