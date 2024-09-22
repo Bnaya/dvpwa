@@ -5,9 +5,9 @@ from django.urls import reverse
 
 from .models import Choice, Question
 
-from sqlparse import wat
+# from sqlparse import wat
 
-wat()
+# wat()
 
 
 # ...
