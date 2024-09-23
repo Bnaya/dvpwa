@@ -1,7 +1,15 @@
 # from django.shortcuts import get_object_or_404, render
-from flask.scaffold import Scaffold
+# from flask.scaffold import Scaffold
 
-Scaffold().jinja_loader()
+# Scaffold().jinja_loader()
+
+from aiohttp_jinja2 import render_string
+
+# from aiohttp.web import run_app
+
+# run_app(app, host=host, port=port)
+
+render_string()
 
 # # ...
 # def vote(request, question_id):
